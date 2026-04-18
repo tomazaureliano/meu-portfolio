@@ -50,15 +50,6 @@ Acesse `http://localhost:5173`
 
 ---
 
-## Customização
-
-Todo o conteúdo está centralizado em `src/data/portfolioData.js`.  
-Para atualizar projetos, stack, bio ou links — edite apenas esse arquivo.
-
-Para substituir a foto, edite `src/data/photo.js` com um novo base64  
-(ou importe uma imagem diretamente via `import photo from '../assets/foto.jpg'`).
-
----
 
 ## Design System
 
