@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TOMAZ.AURELIANO // PORTFOLIO
 
-## Getting Started
+Portfólio profissional de **Tomaz Aureliano** — Full Stack Developer & estudante de Ciência da Computação na UFRPE.
 
-First, run the development server:
+Design system: **Technical Brutalism / The Kinetic Archive**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Stack
+
+- **React 18** + **Vite**
+- Estilização via CSS-in-JS (string de estilos globais injetada via `<style>`)
+- Zero dependências de UI — design system próprio do zero
+
+---
+
+## Estrutura
+
+```
+src/
+├── App.jsx                        ← raiz, IntersectionObserver para nav
+├── main.jsx                       ← entry point
+├── styles/
+│   └── globalStyles.js            ← todo o CSS (brutalism design tokens)
+├── data/
+│   ├── portfolioData.js           ← conteúdo: owner, projetos, skills, etc.
+│   └── photo.js                   ← foto de perfil em base64
+└── components/
+    ├── ui/
+    │   └── index.jsx              ← primitivos: SectionLabel, TermLine, Tag...
+    ├── Navbar.jsx
+    ├── HeroSection.jsx            ← typing animation + terminal overlay
+    ├── ProfileSection.jsx         ← foto real + bento grid
+    ├── StackSection.jsx           ← language cards + skill matrix
+    ├── ProjectsSection.jsx        ← 6 projetos com status badges
+    ├── ContactSection.jsx         ← formulário + info de contato
+    └── Footer.jsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Como rodar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+Acesse `http://localhost:5173`
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Todo o conteúdo está centralizado em `src/data/portfolioData.js`.  
+Para atualizar projetos, stack, bio ou links — edite apenas esse arquivo.
 
-## Deploy on Vercel
+Para substituir a foto, edite `src/data/photo.js` com um novo base64  
+(ou importe uma imagem diretamente via `import photo from '../assets/foto.jpg'`).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design System
+
+| Token | Valor |
+|---|---|
+| Primary | `#FFB4AB` |
+| Primary Container | `#D92525` |
+| Tertiary (Teal) | `#9DD0CF` |
+| Background | `#0E0E0E` |
+| Surface | `#131313` |
+| Border Radius | `0px` (zero global) |
+| Headline Font | Space Grotesk |
+| Body Font | Inter |
