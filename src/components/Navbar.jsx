@@ -1,18 +1,15 @@
 import { useState, useEffect } from "react";
 import { NAV_ITEMS } from "../data/portfolioData";
-import { RESUME_PDF } from "../data/resume";
 
-// ─── Download helper ──────────────────────────────────────────────────────────
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = RESUME_PDF;
+  link.href = "/Curriculo_Tomaz_Aureliano__1_.pdf";
   link.download = "Curriculo_Tomaz_Aureliano.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 }
 
-// ─── Navbar ───────────────────────────────────────────────────────────────────
 export default function Navbar({ active, navigate }) {
   const [scrolled, setScrolled] = useState(false);
 
@@ -32,7 +29,6 @@ export default function Navbar({ active, navigate }) {
         display: "flex", justifyContent: "space-between", alignItems: "center",
         padding: "16px 48px", maxWidth: 1440, margin: "0 auto",
       }}>
-        {/* Brand */}
         <button
           onClick={() => navigate("home")}
           style={{ background: "none", border: "none", cursor: "pointer" }}
@@ -42,7 +38,6 @@ export default function Navbar({ active, navigate }) {
           </span>
         </button>
 
-        {/* Links */}
         <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
           {NAV_ITEMS.map(s => (
             <button
@@ -54,15 +49,13 @@ export default function Navbar({ active, navigate }) {
             </button>
           ))}
 
-          {/* Resume download button */}
           <button
             className="btn-ghost"
             onClick={downloadResume}
             style={{ marginLeft: 16, padding: "8px 18px", fontSize: "0.65rem", display: "inline-flex", alignItems: "center", gap: 6 }}
-            title="Baixar currículo em PDF"
           >
             <span className="material-symbols-outlined" style={{ fontSize: 14 }}>download</span>
-            Currículo
+            RESUME
           </button>
         </div>
       </div>
