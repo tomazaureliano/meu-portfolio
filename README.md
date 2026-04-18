@@ -1,6 +1,6 @@
 # TOMAZ.AURELIANO // PORTFOLIO
 
-Portfólio profissional de **Tomaz Aureliano** — Full Stack Developer & estudante de Ciência da Computação na UFRPE.
+Meu projeto de portfólio profissional — Full Stack Developer & estudante de Ciência da Computação na UFRPE.
 
 Design system: **Technical Brutalism / The Kinetic Archive**
 
