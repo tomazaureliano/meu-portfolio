@@ -62,7 +62,7 @@ export default function Navbar({ active, navigate }) {
             title="Baixar currículo em PDF"
           >
             <span className="material-symbols-outlined" style={{ fontSize: 14 }}>download</span>
-            RESUME
+            Currículo
           </button>
         </div>
       </div>

@@ -15,7 +15,7 @@ export const OWNER = {
   instagram: "https://instagram.com/tomaz_b64",
   status: "ONLINE",
   level: "CS.STUDENT",
-  bio: "Computer Science student passionate about turning complex problems into fluid interfaces and scalable systems. Currently focusing on Full Stack development and process automation.",
+  bio: "Computer Science student passionate about turning complex problems into fluid interfaces and scalable systems. Currently focusing on Full Stack development and process automation with AI.",
   available: "Aberto para oportunidades",
 };
 
@@ -153,4 +153,4 @@ export const CONTACT_INFO = [
   { icon: "corporate_fare",label: "EMPRESA ATUAL",value: "Seed a Bit — UFRPE" },
 ];
 
-export const NAV_ITEMS = ["home", "profile", "stack", "projects", "contact", "currículo"];
+export const NAV_ITEMS = ["home", "profile", "stack", "projects", "contact",];
