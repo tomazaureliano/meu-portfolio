@@ -1,14 +1,14 @@
 import { SectionLabel, StatusBadge, Tag } from "./ui";
 import { PROJECTS } from "../data/portfolioData";
 
-// ─── ProjectCard ──────────────────────────────────────────────────────────────
+
 function ProjectCard({ id, name, type, desc, tags, status, year, metrics, link, alt }) {
   return (
     <article
       className="ghost-border card-hover"
       style={{ background: alt ? "#1B1B1B" : "#0E0E0E", padding: 28 }}
     >
-      {/* Top bar */}
+
       <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 20 }}>
         <span className="font-sg" style={{ fontSize: "0.65rem", letterSpacing: "0.1em", color: "#E6BDB8", opacity: 0.45 }}>
           {id}
@@ -19,7 +19,7 @@ function ProjectCard({ id, name, type, desc, tags, status, year, metrics, link, 
         </div>
       </div>
 
-      {/* Type + Name */}
+
       <span style={{ fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#9DD0CF", display: "block", marginBottom: 4, fontFamily: "'Inter',sans-serif" }}>
         {type}
       </span>
@@ -27,15 +27,15 @@ function ProjectCard({ id, name, type, desc, tags, status, year, metrics, link, 
         {name}
       </h3>
 
-      {/* Description */}
+
       <p style={{ fontSize: "0.84rem", color: "#E6BDB8", lineHeight: 1.65, marginBottom: 20 }}>{desc}</p>
 
-      {/* Tags */}
+
       <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 20 }}>
         {tags.map(t => <Tag key={t}>{t}</Tag>)}
       </div>
 
-      {/* Footer */}
+
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: 14, borderTop: "1px solid rgba(92,64,60,0.2)" }}>
         <span className="font-sg" style={{ fontSize: "0.65rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#9DD0CF" }}>
           {metrics}
@@ -51,7 +51,7 @@ function ProjectCard({ id, name, type, desc, tags, status, year, metrics, link, 
   );
 }
 
-// ─── ProjectsSection ──────────────────────────────────────────────────────────
+
 export default function ProjectsSection() {
   return (
     <section id="projects" className="section-mid" style={{ padding: "96px 0", position: "relative" }}>
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
 
         <SectionLabel>PROJECT_ARCHIVE // DEPLOYED</SectionLabel>
 
-        {/* Header row */}
+
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 48, flexWrap: "wrap", gap: 24 }}>
           <h1 className="font-sg" style={{ fontSize: "clamp(2.5rem,7vw,4.5rem)", fontWeight: 700, letterSpacing: "-0.04em", textTransform: "uppercase", color: "#E2E2E2", lineHeight: 0.9 }}>
             PROJETOS<br /><span style={{ color: "#D92525" }}>SELECIONADOS</span>

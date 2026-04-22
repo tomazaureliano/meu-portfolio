@@ -2,7 +2,7 @@ import { SectionLabel, SectionTitle, Tag } from "./ui";
 import { OWNER, EDUCATION, DIRECTIVES } from "../data/portfolioData";
 import { PROFILE_PHOTO } from "../data/photo";
 
-// ─── AvatarCard ───────────────────────────────────────────────────────────────
+
 function AvatarCard() {
   return (
     <div style={{ width: 260, flexShrink: 0, background: "#2A2A2A", padding: 10 }} className="ghost-border">
@@ -23,7 +23,7 @@ function AvatarCard() {
   );
 }
 
-// ─── BioBlock ─────────────────────────────────────────────────────────────────
+
 function BioBlock() {
   return (
     <div style={{ flex: "1 1 400px" }}>
@@ -52,7 +52,7 @@ function BioBlock() {
   );
 }
 
-// ─── EducationPanel ───────────────────────────────────────────────────────────
+
 function EducationPanel() {
   return (
     <div style={{ background: "#1F1F1F", padding: 32 }} className="ghost-border">
@@ -79,11 +79,11 @@ function EducationPanel() {
         </div>
       ))}
 
-      {/* Experience row */}
+
       <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid rgba(92,64,60,0.2)" }}>
         <div style={{ display: "flex", gap: 28 }}>
           <span className="font-sg" style={{ fontSize: "0.65rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#FFB4AB", minWidth: 130, paddingTop: 3 }}>
-            2024 – PRESENT
+            2026 – PRESENT
           </span>
           <div>
             <h4 className="font-sg" style={{ fontSize: "1.35rem", fontWeight: 600, color: "#E2E2E2", marginBottom: 4 }}>
@@ -100,7 +100,7 @@ function EducationPanel() {
   );
 }
 
-// ─── DirectivesPanel ─────────────────────────────────────────────────────────
+
 function DirectivesPanel() {
   return (
     <div style={{ background: "#353535", padding: 32, borderTop: "4px solid #D92525" }}>
@@ -131,7 +131,7 @@ function DirectivesPanel() {
   );
 }
 
-// ─── NetworkNodes ─────────────────────────────────────────────────────────────
+
 function NetworkNodes() {
   const nodes = [
     { icon: "terminal", label: "GITHUB", desc: "// Source Code Repository", href: OWNER.github, primary: false },
@@ -163,7 +163,7 @@ function NetworkNodes() {
   );
 }
 
-// ─── ProfileSection ───────────────────────────────────────────────────────────
+
 export default function ProfileSection() {
   return (
     <section id="profile" className="section-mid" style={{ padding: "96px 0", position: "relative" }}>
@@ -172,13 +172,13 @@ export default function ProfileSection() {
 
         <SectionLabel color="#9DD0CF">INIT_SEQUENCE // PROFILE</SectionLabel>
 
-        {/* Hero row */}
+  
         <div style={{ display: "flex", gap: 56, flexWrap: "wrap", alignItems: "flex-start", marginBottom: 64 }}>
           <AvatarCard />
           <BioBlock />
         </div>
 
-        {/* Bento grid */}
+
         <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: 2, marginBottom: 2 }}>
           <EducationPanel />
           <DirectivesPanel />

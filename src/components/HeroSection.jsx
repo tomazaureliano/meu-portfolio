@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { SectionLabel, TermLine } from "./ui";
 import { OWNER, METRICS } from "../data/portfolioData";
 
-// ─── Metric Card ──────────────────────────────────────────────────────────────
+
 function MetricCard({ value, label, icon, color }) {
   return (
     <div className="ghost-border" style={{ background: "#131313", padding: "28px 24px" }}>
@@ -17,7 +17,7 @@ function MetricCard({ value, label, icon, color }) {
   );
 }
 
-// ─── Typing Headline ──────────────────────────────────────────────────────────
+
 function TypingHeadline({ text }) {
   const [chars, setChars] = useState(0);
 
@@ -49,7 +49,7 @@ function TypingHeadline({ text }) {
   );
 }
 
-// ─── Terminal Overlay ─────────────────────────────────────────────────────────
+
 function TerminalOverlay() {
   return (
     <div
@@ -81,7 +81,7 @@ function TerminalOverlay() {
   );
 }
 
-// ─── HeroSection ──────────────────────────────────────────────────────────────
+
 export default function HeroSection({ navigate }) {
   return (
     <section id="home" className="section-dark" style={{ minHeight: "100vh", paddingTop: 88, position: "relative", overflow: "hidden" }}>
@@ -112,11 +112,11 @@ export default function HeroSection({ navigate }) {
             </div>
           </div>
 
-          {/* Terminal */}
+   
           <TerminalOverlay />
         </div>
 
-        {/* Metrics */}
+
         <div style={{ marginTop: 64, paddingBottom: 80 }}>
           <SectionLabel>CORE METRICS</SectionLabel>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 2 }}>

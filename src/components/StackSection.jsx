@@ -1,7 +1,7 @@
 import { SectionLabel, SectionTitle, TerminalHeader } from "./ui";
 import { LANGUAGES, SKILL_MATRIX, LOGIC_BLOCKS } from "../data/portfolioData";
 
-// ─── LanguageCard ─────────────────────────────────────────────────────────────
+
 function LanguageCard({ name, version, icon, pct, desc, alt }) {
   return (
     <div className="ghost-border card-hover" style={{ background: alt ? "#1B1B1B" : "#131313", padding: 24 }}>
@@ -27,7 +27,7 @@ function LanguageCard({ name, version, icon, pct, desc, alt }) {
   );
 }
 
-// ─── SkillMatrix ──────────────────────────────────────────────────────────────
+
 function SkillMatrix() {
   return (
     <div style={{ background: "#131313", marginBottom: 48 }} className="ghost-border">
@@ -48,7 +48,7 @@ function SkillMatrix() {
   );
 }
 
-// ─── LogicBlock ───────────────────────────────────────────────────────────────
+
 function LogicBlock({ icon, title, items, bg }) {
   return (
     <div className="ghost-border" style={{ background: bg, padding: 32 }}>
@@ -70,7 +70,7 @@ function LogicBlock({ icon, title, items, bg }) {
   );
 }
 
-// ─── StackSection ─────────────────────────────────────────────────────────────
+
 export default function StackSection() {
   return (
     <section id="stack" className="section-dark" style={{ padding: "96px 0" }}>
@@ -78,7 +78,7 @@ export default function StackSection() {
 
         <SectionLabel color="#9DD0CF">SYSTEM.CAPABILITIES // INITIALIZED</SectionLabel>
 
-        {/* Header */}
+
         <div style={{ marginBottom: 56 }}>
           <SectionTitle line1="STACK_MANIFESTO" size="clamp(2.5rem,7vw,4.5rem)" />
           <div style={{ color: "#FFB4AB" }} />  {/* color override via SectionTitle won't work for single line */}
@@ -89,7 +89,7 @@ export default function StackSection() {
           </div>
         </div>
 
-        {/* Language cards */}
+
         <h2 className="font-sg" style={{ fontSize: "1.8rem", fontWeight: 600, letterSpacing: "-0.02em", textTransform: "uppercase", color: "#FFB4AB", marginBottom: 24 }}>
           CORE LANGUAGES
         </h2>
@@ -99,7 +99,7 @@ export default function StackSection() {
 
         <SkillMatrix />
 
-        {/* Logic blocks */}
+
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 2 }}>
           {LOGIC_BLOCKS.map((b, i) => (
             <LogicBlock key={i} {...b} bg={i % 2 === 0 ? "#2A2A2A" : "#1F1F1F"} />

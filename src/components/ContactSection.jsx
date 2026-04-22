@@ -2,7 +2,7 @@ import { useState } from "react";
 import { SectionLabel, TerminalHeader } from "./ui";
 import { OWNER, CONTACT_INFO } from "../data/portfolioData";
 
-// ─── ContactInfoItem ──────────────────────────────────────────────────────────
+
 function ContactInfoItem({ icon, label, value }) {
   return (
     <div
@@ -20,7 +20,7 @@ function ContactInfoItem({ icon, label, value }) {
   );
 }
 
-// ─── ContactForm ──────────────────────────────────────────────────────────────
+
 function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", msg: "" });
   const [sent, setSent] = useState(false);
@@ -87,7 +87,7 @@ function ContactForm() {
   );
 }
 
-// ─── ContactSection ───────────────────────────────────────────────────────────
+
 export default function ContactSection() {
   return (
     <section id="contact" className="section-dark" style={{ padding: "96px 0", position: "relative" }}>
@@ -97,7 +97,7 @@ export default function ContactSection() {
         <SectionLabel color="#9DD0CF">ESTABLISH_CONNECTION</SectionLabel>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, flexWrap: "wrap" }}>
-          {/* Info column */}
+          
           <div>
             <h1 className="font-sg" style={{ fontSize: "clamp(2.2rem,5vw,3.8rem)", fontWeight: 700, letterSpacing: "-0.04em", textTransform: "uppercase", color: "#E2E2E2", lineHeight: 0.9, marginBottom: 32 }}>
               VAMOS<br /><span style={{ color: "#D92525" }}>CONSTRUIR</span><br />ALGO
@@ -112,7 +112,7 @@ export default function ContactSection() {
               {CONTACT_INFO.map((item, i) => <ContactInfoItem key={i} {...item} />)}
             </div>
 
-            {/* Social quick links */}
+        
             <div style={{ display: "flex", gap: 8, marginTop: 24 }}>
               {[
                 { label: "GITHUB", href: OWNER.github, icon: "terminal" },
@@ -130,7 +130,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Form */}
+      
           <ContactForm />
         </div>
 

@@ -55,7 +55,7 @@ export default function Navbar({ active, navigate }) {
             style={{ marginLeft: 16, padding: "8px 18px", fontSize: "0.65rem", display: "inline-flex", alignItems: "center", gap: 6 }}
           >
             <span className="material-symbols-outlined" style={{ fontSize: 14 }}>download</span>
-            RESUME
+            Currículo
           </button>
         </div>
       </div>
