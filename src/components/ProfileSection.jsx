@@ -41,7 +41,12 @@ function BioBlock() {
       </h2>
 
       <p style={{ fontSize: "0.98rem", color: "#E2E2E2", lineHeight: 1.75, maxWidth: 580, borderLeft: "4px solid #D92525", paddingLeft: 20, marginBottom: 32 }}>
-        {OWNER.bio}
+        
+          Sou estudante de Ciência da Computação na UFRPE, com previsão de formatura em 2029, e tenho 20 anos. 
+          Sempre fui apaixonado por tecnologia e programação, o que me levou a buscar uma formação acadêmica na área. 
+          Tenho experiência prática como desenvolvedor frontend na Seed a Bit Tecnologia, onde aplico meus conhecimentos em projetos reais. 
+          Estou constantemente buscando aprender e aprimorar minhas habilidades, com foco em desenvolvimento web e soluções modernas.
+        
       </p>
 
       <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
