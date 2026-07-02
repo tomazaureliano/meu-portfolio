@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { NAV_ITEMS } from "../data/portfolioData";
 
 function downloadResume() {
+  const resumeUrl = "/Curriculo_Tomaz_Aureliano_07 (1).pdf";
   const link = document.createElement("a");
-  link.href = "/Curriculo_Tomaz_Aureliano__1_.pdf";
-  link.download = "Curriculo_Tomaz_Aureliano.pdf";
+  link.href = resumeUrl;
+  link.download = "Curriculo_Tomaz_Aureliano_07 (1).pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
